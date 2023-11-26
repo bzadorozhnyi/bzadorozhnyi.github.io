@@ -1,0 +1,11 @@
+.digital-clock {
+    margin: 1em auto;
+    padding: 0.25em;
+    width: 5em;
+    height: 1.2em;
+    color: #fff;
+    border-radius: 1em;
+    text-align: center;
+    font: 50px/60px 'DIGITAL', Helvetica;
+    background-color: #000;
+}

@@ -1,0 +1,79 @@
+#exchange-rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exchange-rate div.row {
+    align-items: center;
+    width: 60%;
+}
+
+#exchange-rate div.row > * {
+    flex-grow: 1;
+}
+
+#exchange-rate div {
+    margin-bottom: 20px;
+}
+
+#exchange-rate label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#exchange-rate select {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+}
+
+#exchange-rate select {
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #333;
+}
+
+#exchange-rate input[type="number"] {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+}
+
+#exchange-rate button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#exchange-rate button:hover {
+    background-color: #1f1b1b;
+    color: #fff;
+}
+
+#result {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#exchange-rate div.row {
+    align-items: center;
+}

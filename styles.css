@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header div.row {
+    align-items: center;
+}
+
+header div.row img {
+    height: 5em;
+}
+
+header div.row div.column {
+    align-items: flex-start;
+    padding-left: 1em;
+    height: fit-content;
+}
+
+header div.row div.row {
+    justify-content: flex-end;
+    flex-grow: 3;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* style about section */
+section#about img {
+    border-radius: 50%;
+    width: 25em;
+    height: 25em;
+    padding: 1em;
+}
+
+#about {
+    flex-wrap: wrap;
+}
+
+#about .row {
+    justify-content: center;
+    align-items: center;
+}
+
+#about .description {
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+/* style about section */
+
+.project {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project:hover {
+    border-radius: 1.2em;
+    background-color: #1f1b1b;
+    transform: scale(1.03);
+    transition-delay: 0.3s;
+}
+
+.project img {
+    border-radius: 1.6em;
+    max-width: 22em;
+    padding: 1em;
+}
+
+.project .column {
+    padding: 1em;
+}
+
+.project p {
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+section h1:first-child {
+    text-align: center;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.button-link:hover {
+    background-color: #1f1b1b;
+    color: #fff;
+}
+
+#projects {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+#contact .row {
+    justify-content: center;
+    align-items: center;
+}
+
+#contact img {
+    width: 36px;
+    height: 36px;
+}
+
+.date {
+    font-size: 1.5em;
+}
+
+/* style scrollbar */
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1f1b1b;
+}
+
+/* style scrollbar */
+
+/* jquery-ui */
+
+.ui-menu:last-child{
+    border: 0px;
+    border-radius: 5px;
+}
+
+.ui-menu-item {
+    border-width: 0px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.ui-menu-item:hover {
+    background-color: #1f1b1b;
+    color: #fff;
+}
+
+.ui-datepicker {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    /* Add more styles as needed */
+}
+
+.ui-datepicker:hover {
+    background-color: #1f1b1b;
+    /* color: #fff; */
+}
+
+.ui-datepicker-header {
+    border: none;
+    background-color: #fff;
+    color: #333;
+}
+
+.ui-datepicker-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ui-datepicker-calendar {
+    border: none;
+    background-color: #fff;
+}
+
+.ui-datepicker-calendar a {
+    color: #333;
+}
+
+.ui-datepicker-calendar a:hover {
+    color: #fff;
+    background-color: #1f1b1b;
+}
+
+
+/* Style for input */
+input[type="text"] {
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #1f1b1b;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+input[type="text"]:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* jquery-ui */
+
+section:nth-child(odd) {
+    background-color: #333;
+    color: #fff;
+}
+
+section:nth-child(even) {
+    background-color: #fff;
+    color: #333;
+}
+
+.gallery-section {
+    text-align: center;
+}
+
+#weather {
+    margin: 1em;
+}
+
+#info {
+    text-align: center;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Моє портфоліо</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="clock.css">
+        <link rel="stylesheet" href="rate.css">
+        <link rel="icon" type="image/x-icon" href="media/favicon.png">
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="clock.js"></script>
+        <script src="gallery.js" defer></script>
+        <script src="money.js"></script>
+        <script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script><script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 21,cityid: '690548',appid: 'c2d29aad44a2427c1414241c4587e56e',units: 'metric',containerid: 'openweathermap-widget-21',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
+
+        <script type='text/javascript' src='unitegallery/dist/js/unitegallery.min.js'></script>	
+        <link rel='stylesheet' href='unitegallery/dist/css/unite-gallery.css' type='text/css' />
+        <script type='text/javascript' src='unitegallery/dist/themes/tiles/ug-theme-tiles.js'></script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+                jQuery("#gallery").unitegallery();
+            });
+            
+        </script>
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="column">
+                <!-- <h2>Моє портфоліо</h2> -->
+                <img src="media/portfolio.png" alt="Моє портфоліо">
+            </div>
+            <ul id="menu">
+                <li>Блоки
+                    <ul>
+                        <li data-target="#about">Про мене</li>
+                        <li data-target="#projects">Проєкти</li>
+                        <li data-target="#contact">Контакти</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="about">
+        <h1>ПРО МЕНЕ</h1>
+        <div class="row">
+            <div class="column description">
+                <p>Привіт!</p>
+                <p>Мене звати Богдан - я студент IT-спеціальності, закоханий у світ програмування та технологій.</p>
+                <p>З кожним новим проектом я відчуваю неймовірну енергію та вдячність за можливість творити щось цікаве та корисне. Кожен код, як пазл у складному глобальному пазлі, надихає мене розгадувати нові головоломки та шукати найефективніші рішення.</p>
+                <p>Я завжди вдячний за можливість долучити свою краплинку в цей надзвичайно захоплюючий світ технологій.</p>
+            </div>
+            <img src="media\me.webp">
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h1>ПРОЄКТИ</h1>
+            <div class="project">
+                <div class="row">
+                    <a href="https://github.com/bzadorozhnyi/circles-packer">
+                        <img src="media/example_with_ralgo.webp">
+                    </a>
+                        <div class="column">
+                        <h2>Пакувальник кругів</h2>
+                        <p>
+                            Є набір маленьких кругів, які потрібно зібрати в коло,
+                            розташувати таким чином, щоб жодне з кіл не перекривалося
+                            і було всередині основного кола. Програма знаходить один із
+                            локальних мінімумів задачі упаковки кіл
+                            у коло мінімального радіуса.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="row">
+                    <div class="column">
+                        <h2>"Солвер" Гоморі</h2>
+                        <p>
+                            Знаходить невід’ємне ціле число для задачі
+                            мінімізації/максимізації лінійної функції з лінійними
+                            обмеженнями за допомогою алгоритму Гоморі та генерує файл Excel
+                            із покроковим рішенням.
+                        </p>
+                    </div>
+                    <a href="https://github.com/bzadorozhnyi/gomory_solver">
+                        <img src="media/example.webp">
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="row">
+                    <a href="https://github.com/bzadorozhnyi/graph-editor-react">
+                        <img src="media/editor.png">
+                    </a>
+                    <div class="column">
+                        <h2>Редактор графів</h2>
+                        <p>
+                            Було створено додаток для візуалізації та стилізації
+                            графів залежно від введених  користувачем даних.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="weather">
+        <div class="row">
+            <div id="openweathermap-widget-21"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="date column">
+            <div class="row">
+                <p>
+                    Оберіть день, щоб знати коли я можу з Вами зустрітися:
+                </p>
+                <input type="text" id="datepicker">
+            </div>
+            <div class="row">
+                <p id="message-about-date"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <h1>Час іде, а Ви ще мені не зателефонували</h1>
+        <div class="digital-clock">00:00:00</div>
+        
+        <h1>Щоб було зручно рахувати, скільки мені треба платити</h1>
+        <div id="exchange-rate">
+            <div class="row">
+                <div>
+                    <label for="fromCurrency">From:</label>
+                    <select id="fromCurrency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="UAH">UAH</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="toCurrency">To:</label>
+                    <select id="toCurrency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="UAH">UAH</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" value="1" min="0.01">
+                    <button id="convert">Convert</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="result"></div>
+        </div>
+    </section>
+
+
+    <section class="gallery-section">
+        <br>
+        <h1>Фото, що надихають</h1>
+        <div id="gallery" style="display:none;"></div>
+    </section>
+
+    <section id="contact">
+        <h1>Контакти</h1>
+        <div class="row">
+            <h3>м. Ужгород, Закарпатська область</p>
+            </div>
+            <div class="row">
+                <img src="media/email.png">
+                <p>bohdan.o.zadorozhnyi@gmail.com</p>
+        </div>
+        <br>
+        <div class="row">
+            <a href="https://www.linkedin.com/in/bohdan-zadorozhnyi-63616a225/" target="_blank">
+                <img src="media/linkedin.gif">
+            </a>
+            <a href="https://github.com/bzadorozhnyi" target="_blank">
+                <img src="media/github.gif">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Богдан Задорожний</p>
+    </footer>
+    
+    <script script type="text/javascript" src="index.js"></script>
+</body>
+</html>
